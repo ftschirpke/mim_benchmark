@@ -24,6 +24,12 @@ import time
 from datetime import datetime, timezone
 
 import numpy as np
+
+# Under srun, IREE takes the job's PMI/MPI variables for an MPI launch and fails to create
+# the device without libmpi; the benchmark is a single process.
+for _v in [v for v in os.environ if v.startswith(("PMI_", "PMIX_", "OMPI_", "MPI_", "I_MPI_"))]:
+    del os.environ[_v]
+
 import iree.runtime as rt
 
 DTYPES = {"float32": np.float32, "int64": np.int64}

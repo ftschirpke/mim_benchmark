@@ -114,7 +114,8 @@ export_iree() {
   resolve_gpu_sm
   "$IREE_PY" -c "import iree.turbine, iree.runtime" 2>/dev/null \
     || die "IREE_PY=$IREE_PY cannot import iree.turbine / iree.runtime"
-  log "IREE export (cuda, sm_$GPU_SM): ${#MODELS[@]} model(s) -> $IREE_OUT"
+  local sm="${IREE_GPU_SM:-$GPU_SM}"
+  log "IREE export (cuda, sm_$sm): ${#MODELS[@]} model(s) -> $IREE_OUT"
   mkdir -p "$LOGS/export_iree"
   local k
   for k in "${MODELS[@]}"; do
@@ -125,7 +126,7 @@ export_iree() {
     rm -rf "${IREE_OUT:?}/$k"
     echo -n "  $k: "
     if timeout "$IREE_TIMEOUT" "$IREE_PY" "$SCRIPTS/export_iree.py" "$KERNELBENCH_DIR/$k.py" "$IREE_OUT/$k" \
-         --target cuda --sm "$GPU_SM" > "$LOGS/export_iree/$k.log" 2>&1; then
+         --target cuda --sm "$sm" > "$LOGS/export_iree/$k.log" 2>&1; then
       echo "ok"
     else
       echo "FAILED (see $LOGS/export_iree/$k.log)"

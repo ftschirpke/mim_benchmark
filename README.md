@@ -70,6 +70,7 @@ Settings live in `config.sh`; every one can be overridden from the environment
 | `LLVM_LIB_DIR`    | dir with `libmlir_c_runner_utils.so`              | `lib/` next to the `mlir-opt` on PATH |
 | PATH              | `mlir-opt`, `mlir-translate`, `opt`, `llc`, `clang` | |
 | GPU only: `GPU_SM`  | compute capability, e.g. `120`                  | from `nvidia-smi`                |
+| GPU only: `IREE_GPU_SM` | compute capability IREE compiles for; IREE 3.13 has no Hopper target, so set `89` on `sm_90` | `GPU_SM` |
 | GPU only: `CUDA_HOME` | CUDA toolkit (`lib64/stubs/libcuda.so` to link; `ptxas`, `fatbinary` on PATH for the export) | `/opt/cuda` |
 | GPU only: `IREE_PY` | Python with `torch`, `iree-turbine`, `iree-base-compiler`, `iree-base-runtime` | `python3` |
 

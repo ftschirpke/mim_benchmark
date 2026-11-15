@@ -31,6 +31,9 @@ CUDA_HOME="${CUDA_HOME:-/opt/cuda}"
 # GPU only: Python with torch + iree-turbine + iree-base-{compiler,runtime}.
 IREE_PY="${IREE_PY:-python3}"
 IREE_TIMEOUT="${IREE_TIMEOUT:-1800}"
+# GPU only: compute capability IREE compiles for; empty = GPU_SM. IREE 3.13 has no
+# Hopper target, so on sm_90 set e.g. 89 (the driver JIT-compiles its PTX for the GPU).
+IREE_GPU_SM="${IREE_GPU_SM:-}"
 
 # --- outputs -------------------------------------------------------------------
 # One work dir per target, so CPU and GPU results never mix.

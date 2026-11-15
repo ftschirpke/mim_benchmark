@@ -39,6 +39,8 @@ def main():
 
     spec = importlib.util.spec_from_file_location("kb_model", args.model)
     mod = importlib.util.module_from_spec(spec)
+    # torch.export imports the model's module by name to resolve its globals.
+    sys.modules[spec.name] = mod
     spec.loader.exec_module(mod)
     model = mod.Model(*mod.get_init_inputs()).eval()
     inputs = mod.get_inputs()
@@ -63,8 +65,9 @@ def main():
     r = subprocess.run(cmd, capture_output=True, text=True, timeout=args.timeout)
     t2 = time.perf_counter()
     if r.returncode != 0:
-        sys.stderr.write(r.stderr[-4000:])
-        sys.exit(1)
+        # The error comes first; the IR dump after it can be megabytes long.
+        sys.stderr.write(r.stderr[:4000] + "\n")
+        sys.exit(f"iree-compile failed (exit {r.returncode}): {' '.join(cmd)}")
 
     text = mlir.read_text()
     params = re.findall(r'parameter\.named<"' + SCOPE + r'"::"([^"]+)">', text)
