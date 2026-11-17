@@ -1,0 +1,30 @@
+Generating SQLite file /var/tmp/nsys_06_GoogleNetInceptionModule.sqlite from /var/tmp/nsys_06_GoogleNetInceptionModule.nsys-rep
+Processing [/var/tmp/nsys_06_GoogleNetInceptionModule.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
+ Time (%)  Total Time (ns)  Instances     Avg (ns)         Med (ns)        Min (ns)       Max (ns)     StdDev (ns)                           Name                          
+ --------  ---------------  ---------  ---------------  ---------------  -------------  -------------  -----------  -------------------------------------------------------
+     70.5    1,649,604,420          1  1,649,604,420.0  1,649,604,420.0  1,649,604,420  1,649,604,420          0.0  main_async_dispatch_1_matmul_like_10x96x224x224x480_f32
+     13.2      309,724,810          1    309,724,810.0    309,724,810.0    309,724,810    309,724,810          0.0  main_async_dispatch_3_matmul_like_10x16x224x224x480_f32
+      8.2      191,164,522          1    191,164,522.0    191,164,522.0    191,164,522    191,164,522          0.0  main_async_dispatch_2_conv_10x208x224x224x96x3x3_f32   
+      4.3      100,673,609          1    100,673,609.0    100,673,609.0    100,673,609    100,673,609          0.0  main_async_dispatch_0_matmul_like_10x192x50176x480_f32 
+      1.4       33,138,841          1     33,138,841.0     33,138,841.0     33,138,841     33,138,841          0.0  main_async_dispatch_7_matmul_like_10x64x50176x480_f32  
+      0.9       20,848,976          1     20,848,976.0     20,848,976.0     20,848,976     20,848,976          0.0  main_async_dispatch_4_conv_10x48x224x224x16x5x5_f32    
+      0.5       11,645,577          1     11,645,577.0     11,645,577.0     11,645,577     11,645,577          0.0  main_async_dispatch_6_conv_10x480x224x224x3x3_f32      
+      0.5       10,652,136          1     10,652,136.0     10,652,136.0     10,652,136     10,652,136          0.0  main_async_dispatch_5_slow_memcpy                      
+      0.3        6,552,613          1      6,552,613.0      6,552,613.0      6,552,613      6,552,613          0.0  main_async_dispatch_9_slow_memcpy                      
+      0.2        4,828,964          1      4,828,964.0      4,828,964.0      4,828,964      4,828,964          0.0  main_async_dispatch_8_slow_memcpy                      
+      0.1        1,792,257          1      1,792,257.0      1,792,257.0      1,792,257      1,792,257          0.0  main_async_dispatch_11_slow_memcpy                     
+      0.0          838,561          1        838,561.0        838,561.0        838,561        838,561          0.0  main_async_dispatch_10_slow_memcpy                     
+
+Processing [/var/tmp/nsys_06_GoogleNetInceptionModule.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_mem_time_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Time) (cuda_gpu_mem_time_sum):
+
+ Time (%)  Total Time (ns)  Count    Avg (ns)       Med (ns)      Min (ns)     Max (ns)    StdDev (ns)            Operation          
+ --------  ---------------  -----  -------------  -------------  -----------  -----------  ------------  ----------------------------
+     49.9      156,605,529      1  156,605,529.0  156,605,529.0  156,605,529  156,605,529           0.0  [CUDA memcpy Device-to-Host]
+     47.6      149,275,111     13   11,482,700.8        6,240.0          320  149,024,071  41,326,052.0  [CUDA memcpy Host-to-Device]
+      2.5        7,829,222      3    2,609,740.7      695,104.0       86,944    7,047,174   3,854,941.7  [CUDA memset]               
+

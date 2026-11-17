@@ -1,0 +1,32 @@
+Generating SQLite file /var/tmp/nsys_44_MiniGPTBlock.sqlite from /var/tmp/nsys_44_MiniGPTBlock.nsys-rep
+Processing [/var/tmp/nsys_44_MiniGPTBlock.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
+ Time (%)  Total Time (ns)  Instances    Avg (ns)       Med (ns)      Min (ns)     Max (ns)    StdDev (ns)                                   Name                                 
+ --------  ---------------  ---------  -------------  -------------  -----------  -----------  -----------  ----------------------------------------------------------------------
+     31.7      597,764,129          1  597,764,129.0  597,764,129.0  597,764,129  597,764,129          0.0  main_async_dispatch_17_matmul_like_65536x768x3072_f32                 
+     31.2      587,928,261          1  587,928,261.0  587,928,261.0  587,928,261  587,928,261          0.0  main_async_dispatch_16_matmul_like_65536x3072x768_f32                 
+     23.8      447,612,042          1  447,612,042.0  447,612,042.0  447,612,042  447,612,042          0.0  main_async_dispatch_2_matmul_like_65536x2304x768_f32                  
+      7.7      144,909,631          1  144,909,631.0  144,909,631.0  144,909,631  144,909,631          0.0  main_async_dispatch_13_matmul_like_65536x768x768_f32                  
+      2.7       50,700,300          1   50,700,300.0   50,700,300.0   50,700,300   50,700,300          0.0  main_async_dispatch_9_batch_matmul_1024x512x512x96_f32                
+      0.9       17,437,231          1   17,437,231.0   17,437,231.0   17,437,231   17,437,231          0.0  main_async_dispatch_11_batch_matmul_1024x512x96x512_f32               
+      0.6       11,998,603          1   11,998,603.0   11,998,603.0   11,998,603   11,998,603          0.0  main_async_dispatch_10_softmax_128x8x512x512xf32_dispatch_tensor_store
+      0.3        5,909,381          2    2,954,690.5    2,954,690.5    2,900,707    3,008,674     76,344.2  main_async_dispatch_6_transpose_128x512x8x96_f32                      
+      0.2        4,580,035          2    2,290,017.5    2,290,017.5    1,698,113    2,881,922    837,079.4  main_async_dispatch_1_reduction_65536x768_f32                         
+      0.2        4,548,645          2    2,274,322.5    2,274,322.5    1,657,858    2,890,787    871,812.5  main_async_dispatch_0_reduction_65536x768_f32                         
+      0.2        2,952,803          1    2,952,803.0    2,952,803.0    2,952,803    2,952,803          0.0  main_async_dispatch_8_transpose_128x512x768_f32                       
+      0.1        2,788,387          1    2,788,387.0    2,788,387.0    2,788,387    2,788,387          0.0  main_async_dispatch_12_transpose_128x8x512x96_f32                     
+      0.1        1,960,482          1    1,960,482.0    1,960,482.0    1,960,482    1,960,482          0.0  main_async_dispatch_5_slow_memcpy                                     
+      0.1        1,706,369          1    1,706,369.0    1,706,369.0    1,706,369    1,706,369          0.0  main_async_dispatch_4_slow_memcpy                                     
+      0.1        1,656,066          1    1,656,066.0    1,656,066.0    1,656,066    1,656,066          0.0  main_async_dispatch_3_slow_memcpy                                     
+
+Processing [/var/tmp/nsys_44_MiniGPTBlock.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_mem_time_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Time) (cuda_gpu_mem_time_sum):
+
+ Time (%)  Total Time (ns)  Count    Avg (ns)      Med (ns)     Min (ns)    Max (ns)   StdDev (ns)           Operation          
+ --------  ---------------  -----  ------------  ------------  ----------  ----------  -----------  ----------------------------
+     54.2       36,347,072     14   2,596,219.4       2,128.0         864  31,292,988  8,278,471.8  [CUDA memcpy Host-to-Device]
+     45.8       30,697,434      1  30,697,434.0  30,697,434.0  30,697,434  30,697,434          0.0  [CUDA memcpy Device-to-Host]
+

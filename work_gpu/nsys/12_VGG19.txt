@@ -1,0 +1,39 @@
+Generating SQLite file /var/tmp/nsys_12_VGG19.sqlite from /var/tmp/nsys_12_VGG19.nsys-rep
+Processing [/var/tmp/nsys_12_VGG19.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
+ Time (%)  Total Time (ns)  Instances    Avg (ns)      Med (ns)     Min (ns)    Max (ns)   StdDev (ns)                          Name                         
+ --------  ---------------  ---------  ------------  ------------  ----------  ----------  -----------  -----------------------------------------------------
+     18.0       87,155,563          2  43,577,781.5  43,577,781.5  41,744,388  45,411,175  2,592,810.0  main_async_dispatch_13_conv_10x512x28x28x512x3x3_f32 
+     16.2       78,400,708          2  39,200,354.0  39,200,354.0  38,532,897  39,867,811    943,926.7  main_async_dispatch_8_conv_10x256x56x56x256x3x3_f32  
+     13.0       62,959,350          3  20,986,450.0  20,791,346.0  19,983,921  22,184,083  1,112,981.3  main_async_dispatch_17_conv_10x512x14x14x512x3x3_f32 
+      9.0       43,808,295          1  43,808,295.0  43,808,295.0  43,808,295  43,808,295          0.0  main_async_dispatch_15_conv_10x512x28x28x512x3x3_f32 
+      8.0       38,611,874          1  38,611,874.0  38,611,874.0  38,611,874  38,611,874          0.0  main_async_dispatch_10_conv_10x256x56x56x256x3x3_f32 
+      7.9       38,514,945          1  38,514,945.0  38,514,945.0  38,514,945  38,514,945          0.0  main_async_dispatch_5_conv_10x128x112x112x128x3x3_f32
+      7.6       37,019,552          1  37,019,552.0  37,019,552.0  37,019,552  37,019,552          0.0  main_async_dispatch_2_conv_10x64x224x224x64x3x3_f32  
+      4.7       22,964,660          1  22,964,660.0  22,964,660.0  22,964,660  22,964,660          0.0  main_async_dispatch_12_conv_10x512x28x28x256x3x3_f32 
+      4.2       20,206,450          1  20,206,450.0  20,206,450.0  20,206,450  20,206,450          0.0  main_async_dispatch_20_conv_10x512x14x14x512x3x3_f32 
+      3.9       18,853,873          1  18,853,873.0  18,853,873.0  18,853,873  18,853,873          0.0  main_async_dispatch_7_conv_10x256x56x56x128x3x3_f32  
+      3.7       17,962,608          1  17,962,608.0  17,962,608.0  17,962,608  17,962,608          0.0  main_async_dispatch_4_conv_10x128x112x112x64x3x3_f32 
+      2.3       11,339,946          1  11,339,946.0  11,339,946.0  11,339,946  11,339,946          0.0  main_async_dispatch_22_matmul_10x4096x25088_f32      
+      0.6        2,903,682          1   2,903,682.0   2,903,682.0   2,903,682   2,903,682          0.0  main_async_dispatch_24_matmul_10x1000x4096_f32       
+      0.3        1,297,441          1   1,297,441.0   1,297,441.0   1,297,441   1,297,441          0.0  main_async_dispatch_1_conv_10x64x224x224x3x3x3_f32   
+      0.2        1,157,857          1   1,157,857.0   1,157,857.0   1,157,857   1,157,857          0.0  main_async_dispatch_23_matmul_10x4096x4096_f32       
+      0.1          703,073          1     703,073.0     703,073.0     703,073     703,073          0.0  main_async_dispatch_3_conv_10x64x112x112x2x2_f32     
+      0.1          368,608          1     368,608.0     368,608.0     368,608     368,608          0.0  main_async_dispatch_6_conv_10x128x56x56x2x2_f32      
+      0.0          177,056          1     177,056.0     177,056.0     177,056     177,056          0.0  main_async_dispatch_11_conv_10x256x28x28x2x2_f32     
+      0.0           85,568          1      85,568.0      85,568.0      85,568      85,568          0.0  main_async_dispatch_16_conv_10x512x14x14x2x2_f32     
+      0.0           34,272          1      34,272.0      34,272.0      34,272      34,272          0.0  main_async_dispatch_0_slow_memcpy                    
+      0.0           28,800          1      28,800.0      28,800.0      28,800      28,800          0.0  main_async_dispatch_21_conv_10x512x7x7x2x2_f32       
+
+Processing [/var/tmp/nsys_12_VGG19.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_mem_time_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Time) (cuda_gpu_mem_time_sum):
+
+ Time (%)  Total Time (ns)  Count   Avg (ns)    Med (ns)  Min (ns)   Max (ns)   StdDev (ns)            Operation          
+ --------  ---------------  -----  -----------  --------  --------  ----------  ------------  ----------------------------
+     98.6       91,059,853     39  2,334,868.0   5,152.0       352  64,419,480  10,353,291.5  [CUDA memcpy Host-to-Device]
+      1.4        1,310,465     16     81,904.1  29,584.0     5,664     497,953     127,001.3  [CUDA memset]               
+      0.0           11,872      1     11,872.0  11,872.0    11,872      11,872           0.0  [CUDA memcpy Device-to-Host]
+

@@ -1,0 +1,23 @@
+Generating SQLite file /var/tmp/nsys_21_EfficientNetMBConv.sqlite from /var/tmp/nsys_21_EfficientNetMBConv.nsys-rep
+Processing [/var/tmp/nsys_21_EfficientNetMBConv.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
+ Time (%)  Total Time (ns)  Instances     Avg (ns)         Med (ns)        Min (ns)       Max (ns)     StdDev (ns)                            Name                          
+ --------  ---------------  ---------  ---------------  ---------------  -------------  -------------  -----------  --------------------------------------------------------
+     93.3    1,144,074,699          1  1,144,074,699.0  1,144,074,699.0  1,144,074,699  1,144,074,699          0.0  main_async_dispatch_0_matmul_like_10x672x224x224x112_f32
+      3.9       48,059,017          1     48,059,017.0     48,059,017.0     48,059,017     48,059,017          0.0  main_async_dispatch_1_conv_10x112x112x672x5x5_f32       
+      2.7       33,668,860          1     33,668,860.0     33,668,860.0     33,668,860     33,668,860          0.0  main_async_dispatch_2_matmul_like_10x192x12544x672_f32  
+      0.0            2,848          2          1,424.0          1,424.0          1,408          1,440         22.6  _initializer_0_dispatch_0_elementwise_672_f32           
+      0.0              896          1            896.0            896.0            896            896          0.0  _initializer_2_dispatch_0_elementwise_192_f32           
+
+Processing [/var/tmp/nsys_21_EfficientNetMBConv.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_mem_time_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Time) (cuda_gpu_mem_time_sum):
+
+ Time (%)  Total Time (ns)  Count    Avg (ns)      Med (ns)     Min (ns)    Max (ns)   StdDev (ns)           Operation          
+ --------  ---------------  -----  ------------  ------------  ----------  ----------  -----------  ----------------------------
+     63.3       35,193,694     16   2,199,605.9       1,584.0         416  35,034,462  8,755,991.6  [CUDA memcpy Host-to-Device]
+     26.4       14,680,684      1  14,680,684.0  14,680,684.0  14,680,684  14,680,684          0.0  [CUDA memcpy Device-to-Host]
+     10.3        5,741,733      1   5,741,733.0   5,741,733.0   5,741,733   5,741,733          0.0  [CUDA memset]               
+

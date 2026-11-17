@@ -1,0 +1,21 @@
+Generating SQLite file /var/tmp/nsys_13_DenseNet121TransitionLayer.sqlite from /var/tmp/nsys_13_DenseNet121TransitionLayer.nsys-rep
+Processing [/var/tmp/nsys_13_DenseNet121TransitionLayer.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
+ Time (%)  Total Time (ns)  Instances    Avg (ns)      Med (ns)     Min (ns)    Max (ns)   StdDev (ns)                          Name                         
+ --------  ---------------  ---------  ------------  ------------  ----------  ----------  -----------  -----------------------------------------------------
+     58.5       36,389,609          1  36,389,609.0  36,389,609.0  36,389,609  36,389,609          0.0  main_async_dispatch_1_matmul_like_128x64x65536x32_f32
+     25.2       15,710,642          1  15,710,642.0  15,710,642.0  15,710,642  15,710,642          0.0  main_async_dispatch_2_conv_128x64x128x128x2x2_f32    
+     16.3       10,125,644          1  10,125,644.0  10,125,644.0  10,125,644  10,125,644          0.0  main_async_dispatch_0_elementwise_128x32x65536_f32   
+      0.0            1,472          1       1,472.0       1,472.0       1,472       1,472          0.0  _initializer_0_dispatch_0_elementwise_32_f32         
+
+Processing [/var/tmp/nsys_13_DenseNet121TransitionLayer.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_mem_time_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Time) (cuda_gpu_mem_time_sum):
+
+ Time (%)  Total Time (ns)  Count    Avg (ns)      Med (ns)     Min (ns)    Max (ns)    StdDev (ns)            Operation          
+ --------  ---------------  -----  ------------  ------------  ----------  -----------  ------------  ----------------------------
+     67.1      166,903,429      6  27,817,238.2         512.0         320  166,900,485  68,136,597.3  [CUDA memcpy Host-to-Device]
+     32.9       81,844,732      1  81,844,732.0  81,844,732.0  81,844,732   81,844,732           0.0  [CUDA memcpy Device-to-Host]
+

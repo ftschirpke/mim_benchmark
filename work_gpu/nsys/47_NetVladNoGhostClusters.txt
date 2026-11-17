@@ -1,0 +1,25 @@
+Generating SQLite file /var/tmp/nsys_47_NetVladNoGhostClusters.sqlite from /var/tmp/nsys_47_NetVladNoGhostClusters.nsys-rep
+Processing [/var/tmp/nsys_47_NetVladNoGhostClusters.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
+ Time (%)  Total Time (ns)  Instances   Avg (ns)     Med (ns)    Min (ns)   Max (ns)   StdDev (ns)                                Name                               
+ --------  ---------------  ---------  -----------  -----------  ---------  ---------  -----------  -----------------------------------------------------------------
+     29.5        8,406,183          1  8,406,183.0  8,406,183.0  8,406,183  8,406,183          0.0  main_async_dispatch_3_elementwise_transpose_2048x32x512_f32      
+     26.1        7,436,134          1  7,436,134.0  7,436,134.0  7,436,134  7,436,134          0.0  main_async_dispatch_0_matmul_204800x32x512_f32                   
+     19.2        5,486,021          1  5,486,021.0  5,486,021.0  5,486,021  5,486,021          0.0  main_async_dispatch_2_batch_matmul_2048x32x512x100_f32           
+     15.9        4,540,068          1  4,540,068.0  4,540,068.0  4,540,068  4,540,068          0.0  main_async_dispatch_4_reduction_2048x32x512_f32                  
+      4.8        1,375,009          1  1,375,009.0  1,375,009.0  1,375,009  1,375,009          0.0  main_async_dispatch_5_reduction_2048x16384_f32                   
+      3.7        1,060,481          1  1,060,481.0  1,060,481.0  1,060,481  1,060,481          0.0  main_async_dispatch_6_elementwise_2048x16384_f32                 
+      0.8          223,232          1    223,232.0    223,232.0    223,232    223,232          0.0  main_async_dispatch_1_softmax_204800x32xf32_dispatch_tensor_store
+      0.0            1,344          1      1,344.0      1,344.0      1,344      1,344          0.0  _initializer_0_dispatch_0_elementwise_32_f32                     
+
+Processing [/var/tmp/nsys_47_NetVladNoGhostClusters.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_mem_time_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Time) (cuda_gpu_mem_time_sum):
+
+ Time (%)  Total Time (ns)  Count    Avg (ns)      Med (ns)     Min (ns)    Max (ns)   StdDev (ns)            Operation          
+ --------  ---------------  -----  ------------  ------------  ----------  ----------  ------------  ----------------------------
+     76.1       65,221,495      7   9,317,356.4         320.0         320  65,196,471  24,640,374.0  [CUDA memcpy Host-to-Device]
+     23.9       20,454,257      1  20,454,257.0  20,454,257.0  20,454,257  20,454,257           0.0  [CUDA memcpy Device-to-Host]
+

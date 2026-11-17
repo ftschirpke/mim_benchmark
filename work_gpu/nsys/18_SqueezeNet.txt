@@ -1,0 +1,64 @@
+Generating SQLite file /var/tmp/nsys_18_SqueezeNet.sqlite from /var/tmp/nsys_18_SqueezeNet.nsys-rep
+Processing [/var/tmp/nsys_18_SqueezeNet.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
+ Time (%)  Total Time (ns)  Instances    Avg (ns)       Med (ns)      Min (ns)     Max (ns)    StdDev (ns)                            Name                          
+ --------  ---------------  ---------  -------------  -------------  -----------  -----------  -----------  --------------------------------------------------------
+     28.6      850,845,326          1  850,845,326.0  850,845,326.0  850,845,326  850,845,326          0.0  main_async_dispatch_53_matmul_like_64x1000x31x31x512_f32
+     21.0      622,798,405          1  622,798,405.0  622,798,405.0  622,798,405  622,798,405          0.0  main_async_dispatch_43_conv_64x256x63x63x64x3x3_f32     
+     12.6      375,567,834          2  187,783,917.0  187,783,917.0  187,750,557  187,817,277     47,178.2  main_async_dispatch_31_conv_64x192x63x63x48x3x3_f32     
+     10.6      315,425,417          1  315,425,417.0  315,425,417.0  315,425,417  315,425,417          0.0  main_async_dispatch_0_conv_64x96x253x253x3x7x7_f32      
+      6.4      191,026,016          1  191,026,016.0  191,026,016.0  191,026,016  191,026,016          0.0  main_async_dispatch_17_conv_64x128x126x126x32x3x3_f32   
+      5.3      157,338,532          1  157,338,532.0  157,338,532.0  157,338,532  157,338,532          0.0  main_async_dispatch_25_conv_64x128x63x63x32x3x3_f32     
+      5.1      151,182,822          1  151,182,822.0  151,182,822.0  151,182,822  151,182,822          0.0  main_async_dispatch_50_conv_64x256x31x31x64x3x3_f32     
+      1.9       55,458,159          2   27,729,079.5   27,729,079.5   27,358,903   28,099,256    523,508.6  main_async_dispatch_5_conv_64x64x126x126x16x3x3_f32     
+      0.5       14,652,812          1   14,652,812.0   14,652,812.0   14,652,812   14,652,812          0.0  main_async_dispatch_40_matmul_like_64x64x3969x384_f32   
+      0.5       14,314,860          2    7,157,430.0    7,157,430.0    7,095,782    7,219,078     87,183.4  main_async_dispatch_32_slow_memcpy                      
+      0.5       14,138,860          1   14,138,860.0   14,138,860.0   14,138,860   14,138,860          0.0  main_async_dispatch_20_slow_memcpy                      
+      0.5       14,003,979          2    7,001,989.5    7,001,989.5    6,672,165    7,331,814    466,442.3  main_async_dispatch_29_matmul_like_64x192x3969x48_f32   
+      0.4       12,844,299          2    6,422,149.5    6,422,149.5    5,835,109    7,009,190    830,200.6  main_async_dispatch_33_slow_memcpy                      
+      0.4       12,159,947          1   12,159,947.0   12,159,947.0   12,159,947   12,159,947          0.0  main_async_dispatch_41_matmul_like_64x256x3969x64_f32   
+      0.4       12,136,298          1   12,136,298.0   12,136,298.0   12,136,298   12,136,298          0.0  main_async_dispatch_21_conv_64x256x63x63x3x3_f32        
+      0.4       11,312,105          1   11,312,105.0   11,312,105.0   11,312,105   11,312,105          0.0  main_async_dispatch_15_matmul_like_64x128x15876x32_f32  
+      0.4       10,476,553          2    5,238,276.5    5,238,276.5    4,438,372    6,038,181  1,131,235.8  main_async_dispatch_3_matmul_like_64x64x15876x16_f32    
+      0.3       10,218,697          1   10,218,697.0   10,218,697.0   10,218,697   10,218,697          0.0  main_async_dispatch_34_matmul_like_64x48x3969x384_f32   
+      0.3        9,837,417          1    9,837,417.0    9,837,417.0    9,837,417    9,837,417          0.0  main_async_dispatch_14_matmul_like_64x32x15876x128_f32  
+      0.3        8,755,847          1    8,755,847.0    8,755,847.0    8,755,847    8,755,847          0.0  main_async_dispatch_1_conv_64x96x126x126x3x3_f32        
+      0.3        8,510,792          1    8,510,792.0    8,510,792.0    8,510,792    8,510,792          0.0  main_async_dispatch_44_slow_memcpy                      
+      0.3        8,433,799          1    8,433,799.0    8,433,799.0    8,433,799    8,433,799          0.0  main_async_dispatch_45_slow_memcpy                      
+      0.2        7,181,127          2    3,590,563.5    3,590,563.5    3,453,827    3,727,300    193,374.6  main_async_dispatch_6_slow_memcpy                       
+      0.2        6,801,606          1    6,801,606.0    6,801,606.0    6,801,606    6,801,606          0.0  main_async_dispatch_28_matmul_like_64x48x3969x256_f32   
+      0.2        6,389,252          2    3,194,626.0    3,194,626.0    2,914,434    3,474,818    396,251.3  main_async_dispatch_7_slow_memcpy                       
+      0.2        5,814,886          1    5,814,886.0    5,814,886.0    5,814,886    5,814,886          0.0  main_async_dispatch_46_conv_64x512x31x31x3x3_f32        
+      0.2        5,781,765          1    5,781,765.0    5,781,765.0    5,781,765    5,781,765          0.0  main_async_dispatch_47_matmul_like_64x64x961x512_f32    
+      0.2        5,607,781          1    5,607,781.0    5,607,781.0    5,607,781    5,607,781          0.0  main_async_dispatch_2_matmul_like_64x16x15876x96_f32    
+      0.2        5,495,973          1    5,495,973.0    5,495,973.0    5,495,973    5,495,973          0.0  main_async_dispatch_18_slow_memcpy                      
+      0.2        5,476,197          1    5,476,197.0    5,476,197.0    5,476,197    5,476,197          0.0  main_async_dispatch_8_matmul_like_64x16x15876x128_f32   
+      0.2        5,051,236          1    5,051,236.0    5,051,236.0    5,051,236    5,051,236          0.0  main_async_dispatch_27_slow_memcpy                      
+      0.2        4,877,733          1    4,877,733.0    4,877,733.0    4,877,733    4,877,733          0.0  main_async_dispatch_22_matmul_like_64x32x3969x256_f32   
+      0.1        4,397,316          1    4,397,316.0    4,397,316.0    4,397,316    4,397,316          0.0  main_async_dispatch_54_reduction_64000x961_i1xf32xf32   
+      0.1        4,315,843          1    4,315,843.0    4,315,843.0    4,315,843    4,315,843          0.0  main_async_dispatch_19_slow_memcpy                      
+      0.1        4,315,716          1    4,315,716.0    4,315,716.0    4,315,716    4,315,716          0.0  main_async_dispatch_26_slow_memcpy                      
+      0.1        3,492,356          2    1,746,178.0    1,746,178.0    1,607,778    1,884,578    195,727.2  main_async_dispatch_30_slow_memcpy                      
+      0.1        3,325,666          1    3,325,666.0    3,325,666.0    3,325,666    3,325,666          0.0  main_async_dispatch_23_matmul_like_64x128x3969x32_f32   
+      0.1        2,742,338          1    2,742,338.0    2,742,338.0    2,742,338    2,742,338          0.0  main_async_dispatch_48_matmul_like_64x256x961x64_f32    
+      0.1        2,254,306          1    2,254,306.0    2,254,306.0    2,254,306    2,254,306          0.0  main_async_dispatch_42_slow_memcpy                      
+      0.1        2,150,626          1    2,150,626.0    2,150,626.0    2,150,626    2,150,626          0.0  main_async_dispatch_24_slow_memcpy                      
+      0.1        2,149,633          2    1,074,816.5    1,074,816.5      577,312    1,572,321    703,577.6  main_async_dispatch_4_slow_memcpy                       
+      0.0        1,314,849          1    1,314,849.0    1,314,849.0    1,314,849    1,314,849          0.0  main_async_dispatch_51_slow_memcpy                      
+      0.0        1,165,345          1    1,165,345.0    1,165,345.0    1,165,345    1,165,345          0.0  main_async_dispatch_16_slow_memcpy                      
+      0.0          790,624          1      790,624.0      790,624.0      790,624      790,624          0.0  main_async_dispatch_52_slow_memcpy                      
+      0.0          207,296          1      207,296.0      207,296.0      207,296      207,296          0.0  main_async_dispatch_49_slow_memcpy                      
+      0.0            2,336          1        2,336.0        2,336.0        2,336        2,336          0.0  main_async_dispatch_55_elementwise_64000_f32            
+
+Processing [/var/tmp/nsys_18_SqueezeNet.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_mem_time_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Time) (cuda_gpu_mem_time_sum):
+
+ Time (%)  Total Time (ns)  Count   Avg (ns)    Med (ns)   Min (ns)   Max (ns)   StdDev (ns)           Operation          
+ --------  ---------------  -----  -----------  ---------  --------  ----------  -----------  ----------------------------
+     73.4       32,080,507     53    605,292.6      608.0       288  31,274,683  4,294,036.1  [CUDA memcpy Host-to-Device]
+     26.5       11,603,658     10  1,160,365.8  229,600.0    44,704   7,099,238  2,195,933.8  [CUDA memset]               
+      0.1           40,545      1     40,545.0   40,545.0    40,545      40,545          0.0  [CUDA memcpy Device-to-Host]
+

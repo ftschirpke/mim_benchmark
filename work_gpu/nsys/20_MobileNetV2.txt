@@ -1,0 +1,65 @@
+Generating SQLite file /var/tmp/nsys_20_MobileNetV2.sqlite from /var/tmp/nsys_20_MobileNetV2.nsys-rep
+Processing [/var/tmp/nsys_20_MobileNetV2.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
+ Time (%)  Total Time (ns)  Instances   Avg (ns)     Med (ns)    Min (ns)   Max (ns)   StdDev (ns)                           Name                         
+ --------  ---------------  ---------  -----------  -----------  ---------  ---------  -----------  ------------------------------------------------------
+     20.2        3,961,475          2  1,980,737.5  1,980,737.5  1,341,665  2,619,810    903,785.0  main_async_dispatch_7_matmul_like_10x144x56x56x24_f32 
+      9.0        1,776,001          1  1,776,001.0  1,776,001.0  1,776,001  1,776,001          0.0  main_async_dispatch_11_conv_10x28x28x144x3x3_f32      
+      7.3        1,426,434          2    713,217.0    713,217.0    250,113  1,176,321    654,928.0  main_async_dispatch_36_matmul_like_10x96x196x576_f32  
+      6.5        1,279,041          1  1,279,041.0  1,279,041.0  1,279,041  1,279,041          0.0  main_async_dispatch_20_conv_10x14x14x192x3x3_f32      
+      6.1        1,191,937          3    397,312.3    394,240.0    391,392    406,305      7,917.0  main_async_dispatch_13_matmul_like_10x192x28x28x32_f32
+      5.8        1,136,417          1  1,136,417.0  1,136,417.0  1,136,417  1,136,417          0.0  main_async_dispatch_4_matmul_like_10x96x112x112x16_f32
+      4.9          960,576          2    480,288.0    480,288.0    215,616    744,960    374,302.7  main_async_dispatch_45_matmul_like_10x160x49x960_f32  
+      4.1          803,586          3    267,862.0    267,905.0    267,712    267,969        133.8  main_async_dispatch_43_matmul_like_10x960x7x7x160_f32 
+      3.5          694,944          1    694,944.0    694,944.0    694,944    694,944          0.0  main_async_dispatch_52_matmul_like_10x1280x7x7x320_f32
+      3.3          654,464          3    218,154.7    173,632.0    169,248    311,584     80,941.9  main_async_dispatch_34_matmul_like_10x576x14x14x96_f32
+      3.0          594,304          1    594,304.0    594,304.0    594,304    594,304          0.0  main_async_dispatch_2_conv_10x112x112x32x3x3_f32      
+      2.6          504,544          3    168,181.3    168,064.0    167,904    168,576        351.0  main_async_dispatch_24_matmul_like_10x64x196x384_f32  
+      2.5          497,441          1    497,441.0    497,441.0    497,441    497,441          0.0  main_async_dispatch_5_conv_10x56x56x96x3x3_f32        
+      2.5          490,433          1    490,433.0    490,433.0    490,433    490,433          0.0  main_async_dispatch_55_matmul_10x1000x1280_f32        
+      2.3          446,592          2    223,296.0    223,296.0    223,200    223,392        135.8  main_async_dispatch_14_conv_10x28x28x192x3x3_f32      
+      2.0          389,281          4     97,320.3     97,408.0     96,929     97,536        272.8  main_async_dispatch_23_conv_10x14x14x384x3x3_f32      
+      1.7          337,184          1    337,184.0    337,184.0    337,184    337,184          0.0  main_async_dispatch_8_conv_10x56x56x144x3x3_f32       
+      1.7          324,704          4     81,176.0     80,608.0     80,256     83,232      1,392.7  main_async_dispatch_22_matmul_like_10x384x14x14x64_f32
+      1.5          296,128          2    148,064.0    148,064.0    147,264    148,864      1,131.4  main_async_dispatch_35_conv_10x14x14x576x3x3_f32      
+      1.2          242,592          1    242,592.0    242,592.0    242,592    242,592          0.0  main_async_dispatch_51_matmul_like_10x320x49x960_f32  
+      1.2          226,017          1    226,017.0    226,017.0    226,017    226,017          0.0  main_async_dispatch_9_matmul_like_10x24x3136x144_f32  
+      1.0          198,400          2     99,200.0     99,200.0     98,720     99,680        678.8  main_async_dispatch_15_matmul_like_10x32x784x192_f32  
+      1.0          195,840          3     65,280.0     65,216.0     65,152     65,472        169.3  main_async_dispatch_44_conv_10x7x7x960x3x3_f32        
+      0.9          168,737          1    168,737.0    168,737.0    168,737    168,737          0.0  main_async_dispatch_33_matmul_like_10x96x196x384_f32  
+      0.9          168,097          1    168,097.0    168,097.0    168,097    168,097          0.0  main_async_dispatch_1_conv_10x32x112x112x3x3x3_f32    
+      0.7          146,336          1    146,336.0    146,336.0    146,336    146,336          0.0  main_async_dispatch_6_matmul_like_10x24x3136x96_f32   
+      0.7          130,752          1    130,752.0    130,752.0    130,752    130,752          0.0  main_async_dispatch_42_matmul_like_10x160x49x576_f32  
+      0.5          101,440          1    101,440.0    101,440.0    101,440    101,440          0.0  main_async_dispatch_3_matmul_like_10x16x12544x32_f32  
+      0.5           94,272          1     94,272.0     94,272.0     94,272     94,272          0.0  main_async_dispatch_21_matmul_like_10x64x196x192_f32  
+      0.4           73,057          1     73,057.0     73,057.0     73,057     73,057          0.0  main_async_dispatch_12_matmul_like_10x32x784x144_f32  
+      0.2           41,504          1     41,504.0     41,504.0     41,504     41,504          0.0  main_async_dispatch_41_conv_10x7x7x576x3x3_f32        
+      0.2           37,120          1     37,120.0     37,120.0     37,120     37,120          0.0  main_async_dispatch_0_slow_memcpy                     
+      0.0            7,776          8        972.0        960.0        960        992         16.6  _initializer_21_dispatch_0_elementwise_384_f32        
+      0.0            5,472          6        912.0        912.0        896        928         17.5  _initializer_42_dispatch_0_elementwise_960_f32        
+      0.0            5,376          5      1,075.2        960.0        928      1,312        176.1  _initializer_0_dispatch_0_elementwise_32_f32          
+      0.0            5,376          6        896.0        896.0        864        928         20.2  _initializer_33_dispatch_0_elementwise_576_f32        
+      0.0            5,216          6        869.3        864.0        864        896         13.1  _initializer_12_dispatch_0_elementwise_192_f32        
+      0.0            4,832          5        966.4        928.0        928      1,088         69.4  _initializer_3_dispatch_0_elementwise_96_f32          
+      0.0            4,096          1      4,096.0      4,096.0      4,096      4,096          0.0  main_async_dispatch_53_reduction_12800x49_i1xf32xf32  
+      0.0            3,744          4        936.0        928.0        928        960         16.0  _initializer_20_dispatch_0_elementwise_64_f32         
+      0.0            3,648          4        912.0        912.0        896        928         18.5  _initializer_6_dispatch_0_elementwise_144_f32         
+      0.0            2,656          3        885.3        896.0        864        896         18.5  _initializer_41_dispatch_0_elementwise_160_f32        
+      0.0            1,952          2        976.0        976.0        960        992         22.6  _initializer_5_dispatch_0_elementwise_24_f32          
+      0.0            1,472          1      1,472.0      1,472.0      1,472      1,472          0.0  main_async_dispatch_54_elementwise_12800_f32          
+      0.0              960          1        960.0        960.0        960        960          0.0  _initializer_2_dispatch_0_elementwise_16_f32          
+      0.0              928          1        928.0        928.0        928        928          0.0  _initializer_51_dispatch_0_elementwise_1280_f32       
+      0.0              896          1        896.0        896.0        896        896          0.0  _initializer_50_dispatch_0_elementwise_320_f32        
+
+Processing [/var/tmp/nsys_20_MobileNetV2.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_mem_time_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Time) (cuda_gpu_mem_time_sum):
+
+ Time (%)  Total Time (ns)  Count  Avg (ns)  Med (ns)  Min (ns)  Max (ns)  StdDev (ns)           Operation          
+ --------  ---------------  -----  --------  --------  --------  --------  -----------  ----------------------------
+     89.3        3,186,819    263  12,117.2     384.0       288   926,945     78,381.0  [CUDA memcpy Host-to-Device]
+     10.4          372,256     19  19,592.4   6,656.0     3,840   172,320     38,847.5  [CUDA memset]               
+      0.2            7,968      1   7,968.0   7,968.0     7,968     7,968          0.0  [CUDA memcpy Device-to-Host]
+

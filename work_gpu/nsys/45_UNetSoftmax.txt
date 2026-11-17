@@ -1,0 +1,76 @@
+Generating SQLite file /var/tmp/nsys_45_UNetSoftmax.sqlite from /var/tmp/nsys_45_UNetSoftmax.nsys-rep
+Processing [/var/tmp/nsys_45_UNetSoftmax.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
+ Time (%)  Total Time (ns)  Instances    Avg (ns)      Med (ns)     Min (ns)    Max (ns)   StdDev (ns)                                  Name                                 
+ --------  ---------------  ---------  ------------  ------------  ----------  ----------  -----------  ---------------------------------------------------------------------
+      9.0       39,033,090          2  19,516,545.0  19,516,545.0  19,370,705  19,662,385    206,248.9  main_async_dispatch_18_conv_8x512x8x64x512x3x3_f32                   
+      8.9       38,811,970          1  38,811,970.0  38,811,970.0  38,811,970  38,811,970          0.0  main_async_dispatch_37_conv_8x256x16x128x512x3x3_f32                 
+      8.8       38,532,961          2  19,266,480.5  19,266,480.5  17,903,183  20,629,778  1,927,993.8  main_async_dispatch_8_conv_8x128x32x256x128x3x3_f32                  
+      8.8       38,149,282          1  38,149,282.0  38,149,282.0  38,149,282  38,149,282          0.0  main_async_dispatch_53_conv_8x64x64x512x128x3x3_f32                  
+      8.6       37,567,297          2  18,783,648.5  18,783,648.5  18,427,696  19,139,601    503,392.9  main_async_dispatch_13_conv_8x256x16x128x256x3x3_f32                 
+      8.4       36,707,391          2  18,353,695.5  18,353,695.5  18,053,487  18,653,904    424,558.9  main_async_dispatch_3_conv_8x64x64x512x64x3x3_f32                    
+      8.2       35,796,767          1  35,796,767.0  35,796,767.0  35,796,767  35,796,767          0.0  main_async_dispatch_45_conv_8x128x32x256x256x3x3_f32                 
+      8.2       35,742,528          1  35,742,528.0  35,742,528.0  35,742,528  35,742,528          0.0  main_async_dispatch_29_conv_8x512x8x64x1024x3x3_f32                  
+      4.2       18,507,569          1  18,507,569.0  18,507,569.0  18,507,569  18,507,569          0.0  main_async_dispatch_23_conv_8x1024x4x32x1024x3x3_f32                 
+      3.9       17,189,679          1  17,189,679.0  17,189,679.0  17,189,679  17,189,679          0.0  main_async_dispatch_49_conv_8x64x64x512x128x2x2_f32                  
+      3.6       15,500,622          1  15,500,622.0  15,500,622.0  15,500,622  15,500,622          0.0  main_async_dispatch_41_conv_8x128x32x256x256x2x2_f32                 
+      3.5       15,471,054          1  15,471,054.0  15,471,054.0  15,471,054  15,471,054          0.0  main_async_dispatch_33_conv_8x256x16x128x512x2x2_f32                 
+      3.5       15,092,365          1  15,092,365.0  15,092,365.0  15,092,365  15,092,365          0.0  main_async_dispatch_25_conv_8x512x8x64x1024x2x2_f32                  
+      2.4       10,341,161          1  10,341,161.0  10,341,161.0  10,341,161  10,341,161          0.0  main_async_dispatch_21_conv_8x1024x4x32x512x3x3_f32                  
+      2.2        9,506,952          1   9,506,952.0   9,506,952.0   9,506,952   9,506,952          0.0  main_async_dispatch_6_conv_8x128x32x256x64x3x3_f32                   
+      2.2        9,482,824          1   9,482,824.0   9,482,824.0   9,482,824   9,482,824          0.0  main_async_dispatch_11_conv_8x256x16x128x128x3x3_f32                 
+      2.1        8,977,992          1   8,977,992.0   8,977,992.0   8,977,992   8,977,992          0.0  main_async_dispatch_16_conv_8x512x8x64x256x3x3_f32                   
+      0.6        2,462,530          1   2,462,530.0   2,462,530.0   2,462,530   2,462,530          0.0  main_async_dispatch_52_slow_memcpy                                   
+      0.5        2,023,746          1   2,023,746.0   2,023,746.0   2,023,746   2,023,746          0.0  main_async_dispatch_48_softmax_8x128x32x256xf32_dispatch_tensor_store
+      0.4        1,812,930          1   1,812,930.0   1,812,930.0   1,812,930   1,812,930          0.0  main_async_dispatch_1_conv_8x64x64x512x8x3x3_f32                     
+      0.3        1,314,401          1   1,314,401.0   1,314,401.0   1,314,401   1,314,401          0.0  main_async_dispatch_44_slow_memcpy                                   
+      0.3        1,123,650          2     561,825.0     561,825.0     559,073     564,577      3,891.9  main_async_dispatch_2_softmax_8x64x64x512xf32_dispatch_tensor_store  
+      0.2        1,055,713          1   1,055,713.0   1,055,713.0   1,055,713   1,055,713          0.0  main_async_dispatch_40_softmax_8x256x16x128xf32_dispatch_tensor_store
+      0.2        1,035,489          2     517,744.5     517,744.5     514,624     520,865      4,413.1  main_async_dispatch_4_softmax_8x64x64x512xf32_dispatch_tensor_store  
+      0.1          547,073          1     547,073.0     547,073.0     547,073     547,073          0.0  main_async_dispatch_51_slow_memcpy                                   
+      0.1          511,138          2     255,569.0     255,569.0     255,393     255,745        248.9  main_async_dispatch_7_softmax_8x128x32x256xf32_dispatch_tensor_store 
+      0.1          483,232          1     483,232.0     483,232.0     483,232     483,232          0.0  main_async_dispatch_50_slow_memcpy                                   
+      0.1          371,552          1     371,552.0     371,552.0     371,552     371,552          0.0  main_async_dispatch_5_conv_8x64x32x256x2x2_f32                       
+      0.1          346,464          1     346,464.0     346,464.0     346,464     346,464          0.0  main_async_dispatch_57_matmul_like_8x4x32768x64_f32                  
+      0.1          281,184          1     281,184.0     281,184.0     281,184     281,184          0.0  main_async_dispatch_43_slow_memcpy                                   
+      0.1          270,080          1     270,080.0     270,080.0     270,080     270,080          0.0  main_async_dispatch_36_slow_memcpy                                   
+      0.1          248,960          1     248,960.0     248,960.0     248,960     248,960          0.0  main_async_dispatch_9_softmax_8x128x32x256xf32_dispatch_tensor_store 
+      0.1          222,080          1     222,080.0     222,080.0     222,080     222,080          0.0  main_async_dispatch_42_slow_memcpy                                   
+      0.0          195,872          1     195,872.0     195,872.0     195,872     195,872          0.0  main_async_dispatch_10_conv_8x128x16x128x2x2_f32                     
+      0.0          192,832          2      96,416.0      96,416.0      95,264      97,568      1,629.2  main_async_dispatch_12_softmax_8x256x16x128xf32_dispatch_tensor_store
+      0.0          126,176          1     126,176.0     126,176.0     126,176     126,176          0.0  main_async_dispatch_35_slow_memcpy                                   
+      0.0          102,144          1     102,144.0     102,144.0     102,144     102,144          0.0  main_async_dispatch_32_softmax_8x512x8x64xf32_dispatch_tensor_store  
+      0.0          102,080          1     102,080.0     102,080.0     102,080     102,080          0.0  main_async_dispatch_28_slow_memcpy                                   
+      0.0           90,432          1      90,432.0      90,432.0      90,432      90,432          0.0  main_async_dispatch_14_softmax_8x256x16x128xf32_dispatch_tensor_store
+      0.0           80,640          1      80,640.0      80,640.0      80,640      80,640          0.0  main_async_dispatch_34_slow_memcpy                                   
+      0.0           76,896          2      38,448.0      38,448.0      37,728      39,168      1,018.2  main_async_dispatch_17_softmax_8x512x8x64xf32_dispatch_tensor_store  
+      0.0           70,112          1      70,112.0      70,112.0      70,112      70,112          0.0  _initializer_10_dispatch_0_elementwise_broadcast_2097152_f32         
+      0.0           49,824          1      49,824.0      49,824.0      49,824      49,824          0.0  main_async_dispatch_27_slow_memcpy                                   
+      0.0           49,760          1      49,760.0      49,760.0      49,760      49,760          0.0  main_async_dispatch_0_slow_memcpy                                    
+      0.0           46,496          1      46,496.0      46,496.0      46,496      46,496          0.0  main_async_dispatch_19_softmax_8x512x8x64xf32_dispatch_tensor_store  
+      0.0           41,376          1      41,376.0      41,376.0      41,376      41,376          0.0  main_async_dispatch_26_slow_memcpy                                   
+      0.0           40,512          1      40,512.0      40,512.0      40,512      40,512          0.0  main_async_dispatch_24_softmax_8x1024x4x32xf32_dispatch_tensor_store 
+      0.0           37,920          1      37,920.0      37,920.0      37,920      37,920          0.0  main_async_dispatch_22_softmax_8x1024x4x32xf32_dispatch_tensor_store 
+      0.0           34,464          1      34,464.0      34,464.0      34,464      34,464          0.0  main_async_dispatch_15_conv_8x256x8x64x2x2_f32                       
+      0.0           20,512          1      20,512.0      20,512.0      20,512      20,512          0.0  _initializer_13_dispatch_0_elementwise_broadcast_524288_f32          
+      0.0           15,616          1      15,616.0      15,616.0      15,616      15,616          0.0  main_async_dispatch_20_conv_8x512x4x32x2x2_f32                       
+      0.0            4,864          4       1,216.0       1,200.0       1,024       1,440        207.4  _initializer_4_dispatch_0_elementwise_256_f32                        
+      0.0            4,608          4       1,152.0       1,168.0       1,024       1,248        113.9  _initializer_6_dispatch_0_elementwise_512_f32                        
+      0.0            4,544          4       1,136.0       1,120.0         928       1,376        241.6  _initializer_0_dispatch_0_elementwise_64_f32                         
+      0.0            4,320          1       4,320.0       4,320.0       4,320       4,320          0.0  _initializer_16_dispatch_0_elementwise_broadcast_131072_f32          
+      0.0            4,160          4       1,040.0         960.0         864       1,376        234.4  _initializer_2_dispatch_0_elementwise_128_f32                        
+      0.0            2,432          1       2,432.0       2,432.0       2,432       2,432          0.0  _initializer_19_dispatch_0_elementwise_broadcast_32768_f32           
+      0.0            2,144          2       1,072.0       1,072.0       1,024       1,120         67.9  _initializer_8_dispatch_0_elementwise_1024_f32                       
+
+Processing [/var/tmp/nsys_45_UNetSoftmax.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_mem_time_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Time) (cuda_gpu_mem_time_sum):
+
+ Time (%)  Total Time (ns)  Count  Avg (ns)   Med (ns)   Min (ns)  Max (ns)   StdDev (ns)           Operation          
+ --------  ---------------  -----  ---------  ---------  --------  ---------  -----------  ----------------------------
+     85.6       20,666,382    119  173,667.1      416.0       288  5,930,821    700,073.9  [CUDA memcpy Host-to-Device]
+     11.8        2,845,412     22  129,336.9   69,792.5     4,512    539,649    154,310.9  [CUDA memset]               
+      2.7          640,256      1  640,256.0  640,256.0   640,256    640,256          0.0  [CUDA memcpy Device-to-Host]
+

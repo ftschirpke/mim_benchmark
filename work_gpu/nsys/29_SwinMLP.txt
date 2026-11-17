@@ -1,0 +1,96 @@
+Generating SQLite file /var/tmp/nsys_29_SwinMLP.sqlite from /var/tmp/nsys_29_SwinMLP.nsys-rep
+Processing [/var/tmp/nsys_29_SwinMLP.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
+ Time (%)  Total Time (ns)  Instances   Avg (ns)     Med (ns)    Min (ns)   Max (ns)   StdDev (ns)                              Name                             
+ --------  ---------------  ---------  -----------  -----------  ---------  ---------  -----------  -------------------------------------------------------------
+     22.4       34,232,862          6  5,705,477.0  5,555,285.0  4,533,540  7,182,150  1,061,721.0  main_async_dispatch_66_matmul_like_1960x1536x384_f32         
+     21.8       33,421,726          6  5,570,287.7  5,768,837.5  4,571,332  6,468,166    736,018.2  main_async_dispatch_67_matmul_like_1960x384x1536_f32         
+      8.3       12,689,771          2  6,344,885.5  6,344,885.5  5,504,325  7,185,446  1,188,732.1  main_async_dispatch_138_matmul_like_490x768x3072_f32         
+      8.1       12,339,787          2  6,169,893.5  6,169,893.5  4,861,444  7,478,343  1,850,427.0  main_async_dispatch_10_matmul_like_31360x384x96_f32          
+      7.8       11,961,834          2  5,980,917.0  5,980,917.0  5,695,781  6,266,053    403,243.2  main_async_dispatch_11_matmul_like_31360x96x384_f32          
+      7.5       11,419,722          2  5,709,861.0  5,709,861.0  4,999,492  6,420,230  1,004,613.5  main_async_dispatch_39_matmul_like_7840x192x768_f32          
+      7.2       11,059,402          2  5,529,701.0  5,529,701.0  4,860,548  6,198,854    946,325.2  main_async_dispatch_137_matmul_like_490x3072x768_f32         
+      7.1       10,827,497          2  5,413,748.5  5,413,748.5  4,453,731  6,373,766  1,357,669.8  main_async_dispatch_38_matmul_like_7840x768x192_f32          
+      2.2        3,291,363          1  3,291,363.0  3,291,363.0  3,291,363  3,291,363          0.0  main_async_dispatch_58_matmul_like_1960x384x768_f32          
+      1.8        2,737,155          1  2,737,155.0  2,737,155.0  2,737,155  2,737,155          0.0  main_async_dispatch_30_matmul_like_7840x192x384_f32          
+      1.1        1,756,961          1  1,756,961.0  1,756,961.0  1,756,961  1,756,961          0.0  main_async_dispatch_128_matmul_like_490x768x1536_f32         
+      1.0        1,560,801          1  1,560,801.0  1,560,801.0  1,560,801  1,560,801          0.0  main_async_dispatch_44_matmul_like_250x49x6x32x49_f32        
+      0.7        1,096,865          1  1,096,865.0  1,096,865.0  1,096,865  1,096,865          0.0  main_async_dispatch_6_matmul_like_640x49x3x32x49_f32         
+      0.7        1,051,521          1  1,051,521.0  1,051,521.0  1,051,521  1,051,521          0.0  main_async_dispatch_16_matmul_like_810x49x3x32x49_f32        
+      0.3          431,136          3    143,712.0    143,168.0    143,136    144,832        970.1  main_async_dispatch_72_matmul_like_90x49x12x32x49_f32        
+      0.2          354,464          1    354,464.0    354,464.0    354,464    354,464          0.0  main_async_dispatch_0_conv_10x96x56x56x3x4x4_f32             
+      0.2          293,952          1    293,952.0    293,952.0    293,952    293,952          0.0  main_async_dispatch_157_matmul_10x1000x768_f32               
+      0.2          273,888          1    273,888.0    273,888.0    273,888    273,888          0.0  main_async_dispatch_34_matmul_like_160x49x6x32x49_f32        
+      0.2          232,160          3     77,386.7     77,504.0     76,672     77,984        663.8  main_async_dispatch_62_matmul_like_40x49x12x32x49_f32        
+      0.1          200,192          5     40,038.4     32,032.0     31,200     70,112     16,885.3  main_async_dispatch_1_reduction_31360x96_f32                 
+      0.1          164,128          4     41,032.0     37,888.0     32,416     55,936     11,006.8  main_async_dispatch_2_reduction_31360x96_f32                 
+      0.1          105,504          1    105,504.0    105,504.0    105,504    105,504          0.0  main_async_dispatch_15_transpose_90x7x9x672_f32              
+      0.1          104,704          1    104,704.0    104,704.0    104,704    104,704          0.0  main_async_dispatch_17_transpose_90x9x7x672_f32              
+      0.1           98,304          2     49,152.0     49,152.0     48,832     49,472        452.5  main_async_dispatch_132_matmul_like_10x49x24x32x49_f32       
+      0.1           87,712         12      7,309.3      5,920.0      4,096     14,112      3,593.1  main_async_dispatch_59_reduction_1960x384_f32                
+      0.1           80,192          1     80,192.0     80,192.0     80,192     80,192          0.0  main_async_dispatch_7_elementwise_transpose_80x7x8x672_f32   
+      0.1           78,208          1     78,208.0     78,208.0     78,208     78,208          0.0  main_async_dispatch_19_elementwise_3010560_f32               
+      0.0           75,521          1     75,521.0     75,521.0     75,521     75,521          0.0  main_async_dispatch_45_transpose_50x5x7x1344_f32             
+      0.0           64,864          1     64,864.0     64,864.0     64,864     64,864          0.0  main_async_dispatch_43_transpose_50x7x5x1344_f32             
+      0.0           63,616          1     63,616.0     63,616.0     63,616     63,616          0.0  main_async_dispatch_14_slow_memcpy                           
+      0.0           61,632          4     15,408.0     13,856.0      8,384     25,536      8,456.4  main_async_dispatch_31_reduction_7840x192_f32                
+      0.0           54,304          1     54,304.0     54,304.0     54,304     54,304          0.0  main_async_dispatch_18_slow_memcpy                           
+      0.0           44,768          9      4,974.2      4,832.0      4,320      6,144        570.2  main_async_dispatch_65_reduction_1960x384_f32                
+      0.0           37,632          3     12,544.0     12,448.0     12,384     12,800        224.0  main_async_dispatch_71_transpose_30x7x3x2688_f32             
+      0.0           36,608          3     12,202.7     12,192.0     12,160     12,256         48.9  main_async_dispatch_73_transpose_30x3x7x2688_f32             
+      0.0           31,744          3     10,581.3     10,592.0     10,400     10,752        176.2  main_async_dispatch_74_slow_memcpy                           
+      0.0           31,456          3     10,485.3     10,496.0     10,400     10,560         80.5  main_async_dispatch_70_slow_memcpy                           
+      0.0           31,232          1     31,232.0     31,232.0     31,232     31,232          0.0  main_async_dispatch_154_slow_memcpy                          
+      0.0           30,528          3     10,176.0      9,664.0      9,024     11,840      1,476.2  main_async_dispatch_37_reduction_7840x192_f32                
+      0.0           29,632          1     29,632.0     29,632.0     29,632     29,632          0.0  main_async_dispatch_4_reduction_31360x96_f32                 
+      0.0           29,600          1     29,600.0     29,600.0     29,600     29,600          0.0  main_async_dispatch_47_elementwise_1505280_f32               
+      0.0           24,608          1     24,608.0     24,608.0     24,608     24,608          0.0  main_async_dispatch_153_elementwise_transpose_10x768x49_f32  
+      0.0           23,008          1     23,008.0     23,008.0     23,008     23,008          0.0  main_async_dispatch_42_slow_memcpy                           
+      0.0           22,752          1     22,752.0     22,752.0     22,752     22,752          0.0  main_async_dispatch_5_elementwise_transpose_80x8x7x7x96_f32  
+      0.0           20,800          1     20,800.0     20,800.0     20,800     20,800          0.0  main_async_dispatch_46_slow_memcpy                           
+      0.0           19,360          3      6,453.3      6,240.0      6,208      6,912        397.5  main_async_dispatch_61_elementwise_transpose_20x2x7x7x384_f32
+      0.0           18,528          3      6,176.0      6,240.0      5,920      6,368        230.8  main_async_dispatch_75_elementwise_752640_f32                
+      0.0           18,240          3      6,080.0      6,080.0      6,080      6,080          0.0  main_async_dispatch_63_elementwise_transpose_20x7x2x2688_f32 
+      0.0           17,760          1     17,760.0     17,760.0     17,760     17,760          0.0  main_async_dispatch_29_reduction_7840x384_f32                
+      0.0           17,248          1     17,248.0     17,248.0     17,248     17,248          0.0  main_async_dispatch_28_reduction_7840x384_f32                
+      0.0           17,088          1     17,088.0     17,088.0     17,088     17,088          0.0  main_async_dispatch_24_slow_memcpy                           
+      0.0           16,640          1     16,640.0     16,640.0     16,640     16,640          0.0  main_async_dispatch_26_slow_memcpy                           
+      0.0           16,448          1     16,448.0     16,448.0     16,448     16,448          0.0  main_async_dispatch_27_slow_memcpy                           
+      0.0           16,000          1     16,000.0     16,000.0     16,000     16,000          0.0  main_async_dispatch_25_slow_memcpy                           
+      0.0           14,432          4      3,608.0      3,424.0      2,016      5,568      1,846.7  main_async_dispatch_133_reduction_490x768_f32                
+      0.0           13,920          4      3,480.0      3,488.0      3,360      3,584        105.7  main_async_dispatch_134_elementwise_490x768_f32              
+      0.0           12,224          1     12,224.0     12,224.0     12,224     12,224          0.0  main_async_dispatch_33_elementwise_transpose_40x4x7x7x192_f32
+      0.0           11,648          1     11,648.0     11,648.0     11,648     11,648          0.0  main_async_dispatch_35_elementwise_transpose_40x7x4x1344_f32 
+      0.0           10,368          1     10,368.0     10,368.0     10,368     10,368          0.0  main_async_dispatch_57_reduction_1960x768_f32                
+      0.0           10,176          5      2,035.2      2,048.0      2,016      2,048         17.5  main_async_dispatch_130_reduction_490x768_f32                
+      0.0            9,408          1      9,408.0      9,408.0      9,408      9,408          0.0  main_async_dispatch_56_reduction_1960x768_f32                
+      0.0            9,216          3      3,072.0      3,072.0      3,008      3,136         64.0  main_async_dispatch_60_reduction_1960x384_f32                
+      0.0            8,416          1      8,416.0      8,416.0      8,416      8,416          0.0  main_async_dispatch_32_reduction_7840x192_f32                
+      0.0            8,224          2      4,112.0      4,112.0      3,840      4,384        384.7  main_async_dispatch_131_elementwise_transpose_10x24x49x32_f32
+      0.0            8,096          1      8,096.0      8,096.0      8,096      8,096          0.0  main_async_dispatch_52_slow_memcpy                           
+      0.0            7,808          1      7,808.0      7,808.0      7,808      7,808          0.0  main_async_dispatch_55_slow_memcpy                           
+      0.0            7,776          1      7,776.0      7,776.0      7,776      7,776          0.0  main_async_dispatch_53_slow_memcpy                           
+      0.0            7,648          1      7,648.0      7,648.0      7,648      7,648          0.0  main_async_dispatch_54_slow_memcpy                           
+      0.0            7,520          2      3,760.0      3,760.0      3,744      3,776         22.6  main_async_dispatch_136_elementwise_490x768_f32              
+      0.0            5,824          1      5,824.0      5,824.0      5,824      5,824          0.0  main_async_dispatch_127_reduction_490x1536_f32               
+      0.0            5,728          1      5,728.0      5,728.0      5,728      5,728          0.0  main_async_dispatch_155_reduction_7680x49_i1xf32xf32         
+      0.0            5,280          1      5,280.0      5,280.0      5,280      5,280          0.0  main_async_dispatch_125_slow_memcpy                          
+      0.0            4,960          1      4,960.0      4,960.0      4,960      4,960          0.0  main_async_dispatch_123_slow_memcpy                          
+      0.0            4,928          1      4,928.0      4,928.0      4,928      4,928          0.0  main_async_dispatch_126_reduction_490x1536_f32               
+      0.0            4,896          1      4,896.0      4,896.0      4,896      4,896          0.0  main_async_dispatch_122_slow_memcpy                          
+      0.0            4,800          1      4,800.0      4,800.0      4,800      4,800          0.0  main_async_dispatch_124_slow_memcpy                          
+      0.0            2,848          1      2,848.0      2,848.0      2,848      2,848          0.0  main_async_dispatch_129_reduction_490x768_f32                
+      0.0              992          1        992.0        992.0        992        992          0.0  main_async_dispatch_156_elementwise_7680_f32                 
+
+Processing [/var/tmp/nsys_29_SwinMLP.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_mem_time_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Time) (cuda_gpu_mem_time_sum):
+
+ Time (%)  Total Time (ns)  Count  Avg (ns)  Med (ns)  Min (ns)  Max (ns)   StdDev (ns)           Operation          
+ --------  ---------------  -----  --------  --------  --------  ---------  -----------  ----------------------------
+     99.2       13,451,271    138  97,473.0     496.0       320  1,526,690    280,313.6  [CUDA memcpy Host-to-Device]
+      0.8          103,168      6  17,194.7   9,248.0     2,240     54,528     19,231.9  [CUDA memset]               
+      0.1            7,808      1   7,808.0   7,808.0     7,808      7,808          0.0  [CUDA memcpy Device-to-Host]
+

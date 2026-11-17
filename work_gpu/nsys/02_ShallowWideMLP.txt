@@ -1,0 +1,20 @@
+Generating SQLite file /var/tmp/nsys_02_ShallowWideMLP.sqlite from /var/tmp/nsys_02_ShallowWideMLP.nsys-rep
+Processing [/var/tmp/nsys_02_ShallowWideMLP.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
+ Time (%)  Total Time (ns)  Instances    Avg (ns)       Med (ns)      Min (ns)     Max (ns)    StdDev (ns)                        Name                      
+ --------  ---------------  ---------  -------------  -------------  -----------  -----------  -----------  ------------------------------------------------
+     49.4      584,696,163          1  584,696,163.0  584,696,163.0  584,696,163  584,696,163          0.0  main_async_dispatch_1_matmul_128x32768x32768_f32
+     25.5      301,830,070          1  301,830,070.0  301,830,070.0  301,830,070  301,830,070          0.0  main_async_dispatch_2_matmul_128x16384x32768_f32
+     25.0      296,284,067          1  296,284,067.0  296,284,067.0  296,284,067  296,284,067          0.0  main_async_dispatch_0_matmul_128x32768x16384_f32
+
+Processing [/var/tmp/nsys_02_ShallowWideMLP.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_mem_time_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Time) (cuda_gpu_mem_time_sum):
+
+ Time (%)  Total Time (ns)  Count    Avg (ns)      Med (ns)    Min (ns)    Max (ns)     StdDev (ns)            Operation          
+ --------  ---------------  -----  -------------  -----------  ---------  -----------  -------------  ----------------------------
+     99.9    1,353,046,880      7  193,292,411.4  1,291,040.0     11,520  669,699,463  264,451,065.1  [CUDA memcpy Host-to-Device]
+      0.1        1,286,656      1    1,286,656.0  1,286,656.0  1,286,656    1,286,656            0.0  [CUDA memcpy Device-to-Host]
+

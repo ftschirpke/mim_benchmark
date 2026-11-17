@@ -1,0 +1,26 @@
+Generating SQLite file /var/tmp/nsys_25_ShuffleNetUnit.sqlite from /var/tmp/nsys_25_ShuffleNetUnit.nsys-rep
+Processing [/var/tmp/nsys_25_ShuffleNetUnit.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
+ Time (%)  Total Time (ns)  Instances    Avg (ns)       Med (ns)      Min (ns)     Max (ns)    StdDev (ns)                              Name                             
+ --------  ---------------  ---------  -------------  -------------  -----------  -----------  -----------  -------------------------------------------------------------
+     74.3      131,221,585          1  131,221,585.0  131,221,585.0  131,221,585  131,221,585          0.0  main_async_dispatch_4_matmul_like_10x480x50176x240_f32       
+     12.9       22,709,779          1   22,709,779.0   22,709,779.0   22,709,779   22,709,779          0.0  main_async_dispatch_5_matmul_like_10x3x160x50176x40_f32      
+      6.5       11,428,362          1   11,428,362.0   11,428,362.0   11,428,362   11,428,362          0.0  main_async_dispatch_0_matmul_like_10x3x40x50176x80_f32       
+      2.7        4,800,676          1    4,800,676.0    4,800,676.0    4,800,676    4,800,676          0.0  main_async_dispatch_2_conv_10x224x224x120x3x3_f32            
+      2.3        4,008,004          1    4,008,004.0    4,008,004.0    4,008,004    4,008,004          0.0  main_async_dispatch_3_elementwise_transpose_10x40x3x50176_f32
+      1.4        2,547,266          1    2,547,266.0    2,547,266.0    2,547,266    2,547,266          0.0  main_async_dispatch_1_slow_memcpy                            
+      0.0            2,432          2        1,216.0        1,216.0        1,152        1,280         90.5  _initializer_0_dispatch_0_elementwise_120_f32                
+      0.0            1,760          2          880.0          880.0          864          896         22.6  _initializer_2_dispatch_0_elementwise_480_f32                
+
+Processing [/var/tmp/nsys_25_ShuffleNetUnit.sqlite] with [/usr/lib/nsight-systems/target-linux-x64/reports/cuda_gpu_mem_time_sum.py]... 
+
+ ** CUDA GPU MemOps Summary (by Time) (cuda_gpu_mem_time_sum):
+
+ Time (%)  Total Time (ns)  Count    Avg (ns)       Med (ns)      Min (ns)     Max (ns)    StdDev (ns)            Operation          
+ --------  ---------------  -----  -------------  -------------  -----------  -----------  ------------  ----------------------------
+     65.8      146,869,791      1  146,869,791.0  146,869,791.0  146,869,791  146,869,791           0.0  [CUDA memcpy Device-to-Host]
+     33.7       75,202,497     21    3,581,071.3        1,280.0          352   75,091,137  16,385,022.4  [CUDA memcpy Host-to-Device]
+      0.4          969,313      1      969,313.0      969,313.0      969,313      969,313           0.0  [CUDA memset]               
+
